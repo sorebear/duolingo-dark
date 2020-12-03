@@ -1,0 +1,294 @@
+/***********
+** GLOBAL **
+***********/
+
+:root {
+  --primary: #333;
+  --light-accent: #444;
+  --lighter-accent: #555;
+  --dark-accent: #222;
+  --darkest-accent: #1a1a1a;
+  --black: #000;
+  --gold: #ffc800;
+  --dark-gold: #d88500;
+
+  --white: #fff;
+  --almost-white: #eee;
+  --off-white: #ddd;
+
+  --standard-border: var(--dark-accent);
+  --title-text: var(--almost-white);
+  --body-text: var(--almost-white);
+
+  /* Text Bubble */
+  --text-bubble-bg: var(--lighter-accent);
+  --text-bubble-text: var(--almost-white);
+  --text-bubble-border: var(--lighter-accent);
+
+  /* Input Textarea */
+  --textarea-bg: var(--dark-accent);
+  --textarea-text: var(--white);
+  --textarea-border: var(--darkest-accent);
+
+  /* Side Items */
+  --side-item-bg: var(--light-accent);
+  --side-item-border: var(--standard-border);
+
+  /* Locked Sections */
+  --locked-section-bg: var(--light-accent);
+  --locked-section-border: var(--standard-border);
+}
+
+body.dark-theme { 
+  background-color: var(--primary) !important;
+}
+
+body.dark-theme hr {
+  border-top: 2px solid var(--standard-border);
+}
+
+/*****************
+** LEARN SCREEN **
+*****************/
+
+/* Top Bar Wrapper */
+body.dark-theme ._2j1Gc {
+  background-color: var(--primary) !important;
+  border-bottom: 2px solid var(--standard-border) !important;
+}
+
+/* Try Plus Button Wrapper */
+body.dark-theme .kooao {
+  border: 2px solid var(--standard-border) !important;
+}
+
+/* Skill Tree Wrapper */
+body.dark-theme #root > div:first-child > div:nth-child(2) > div:first-child > div:nth-child(2) > div:first-child {
+  background-color: #333;
+}
+
+/* Skill Tree Flag */
+body.dark-theme ._3yA12:after,
+body.dark-theme ._17s2H {
+  background-color: #222 !important;
+}
+
+/* Skill Tree Flag Border */
+body.dark-theme ._1jKFt:before,
+body.dark-theme ._2TPZF:after {
+  border: 2px solid #222 !important;
+}
+
+/* Skill Tree Blank Crown */
+body.dark-theme img[alt="crown"]:last-child {
+  display: none !important;
+}
+
+/* Leaderboard Wrapper */
+body.dark-theme #root > div:first-child > div:nth-child(2) > div:first-child > div:nth-child(1) > div:first-child > div:first-child {
+  background-color: #444;
+  border: 2px solid var(--side-item-border);
+}
+
+/* Side Bar Panel Wrappers */
+body.dark-theme ._3ZuGY,
+body.dark-theme ._3Gj5_ {
+  background-color: var(--side-item-border) !important;
+  border: 2px solid var(--side-item-border) !important;
+}
+
+/* Next achievement text */
+body.dark-theme ._2jQLr {
+  color: var(--body-text);
+}
+
+/* Bar under "Friends" */
+body.dark-theme .-AHpg {
+  border-bottom: 2px solid var(--primary) !important;
+}
+
+/* Friends XP Tile */
+body.dark-theme ._2Inq2:not(:last-child) {
+  border-bottom: 2px solid var(--primary) !important;
+}
+
+/* Friends XP Text */
+body.dark-theme .YBCQI {
+  color: var(--body-text) !important;
+}
+
+/* Friends List */
+body.dark-theme ul._3lKd4 {
+  border-bottom: 2px solid var(--primary) !important;
+}
+
+/* Leaderboard Title */
+body.dark-theme #root > div:first-child > div:nth-child(2) > div:first-child > div:nth-child(1) > div:first-child > div:first-child h2 {
+  color: var(--title-text);
+}
+
+/* Follow Duolingo */
+body.dark-theme ._3qTe3 {
+  color: var(--body-text) !important;
+}
+
+/* Skill Text */
+body.dark-theme div[data-test="skill"] div:nth-child(2) {
+  color: var(--body-text) !important;
+}
+
+/* Skill Level Number */
+body.dark-theme div[data-test="skill"] div[data-test="level-crown"] {
+  color: var(--dark-gold) !important;
+}
+
+/* Border around Skills */
+body.dark-theme div[data-test="skill"] svg > g > path:first-child,
+body.dark-theme div[data-test="skill"] g circle:nth-child(2) {
+  fill: #555;
+}
+
+/* Disabled Skills */
+body.dark-theme ._1A0LT {
+  background-color: #555 !important;
+}
+
+/* Disabled Skills Icon */
+body.dark-theme ._1A0LT image {
+  opacity: .3 !important;
+}
+
+
+/* Locked Skill Sections: Top */
+body.dark-theme .GVcJz {
+  background-color: var(--locked-section-bg) !important;
+  border: 2px solid var(--locked-section-border) !important;
+  border-bottom: none !important;
+}
+
+/* Locked Skill Sections: Middle */
+body.dark-theme ._3M0r3 {
+  background-color: var(--locked-section-bg) !important;
+  border-top: none;
+  border-bottom: none;
+  border-left: 2px solid var(--locked-section-border) !important;
+  border-right: 2px solid var(--locked-section-border) !important;
+}
+
+/* Locked Skill Sections: Bottom */
+body.dark-theme ._3izPU {
+  background-color: var(--locked-section-bg) !important;
+  border: 2px solid var(--standard-border) !important;
+  border-top: none !important;
+}
+/*******************
+** LESSONS SCREEN **
+*******************/
+
+/* Progress Bar */
+body.dark-theme ._2cmOB {
+  background-color: #777 !important;
+}
+
+/* Challenge Header */
+body.dark-theme h1[data-test="challenge-header"] {
+  color: var(--title-text) !important;
+}
+
+/* Text Input */
+body.dark-theme textarea[data-test="challenge-translate-input"] {
+  background-color: var(--textarea-bg) !important;
+  color: var(--textarea-text);
+  border-color: var(--textarea-border);
+}
+
+/* Prompt */
+body.dark-theme ._1Q4WV {
+  background-color: var(--text-bubble-bg) !important;
+  border: 2px solid var(--text-bubble-border) !important;
+  color: var(--text-bubble-text) !important;
+}
+
+/* Completed Prompt */
+body.dark-theme ._1Q4WV._1JPPG {
+  border: 2px solid var(--gold) !important;
+}
+
+/* Prompt Triangle */
+body.dark-theme ._2nhmY {
+  background-color: var(--text-bubble-bg) !important;
+  border: 2px solid var(--text-bubble-border) !important;
+}
+
+/* Completed Prompt Triangle */
+body.dark-theme ._1JPPG._2nhmY {
+  background-color: var(--gold) !important;
+  border: 2px solid var(--gold) !important;
+}
+
+/* Line on Listening Exercise */
+body.dark-theme ._3ANq3 > span:not(:last-child) {
+  border-right: 2px solid #1a1a1a !important;
+}
+
+/* Buttons */
+body.dark-theme ._3iVqs {
+  color: #ddd !important;
+}
+
+/* Listen Slowly Button */
+body.dark-theme ._2KQGO:before {
+  border: none !important;
+}
+
+body.dark-theme ._3iVqs:after {
+  background-color: #444 !important;
+  border-color: #555 !important;
+}
+
+/* Bottom Bar */
+body.dark-theme ._399cc {
+  background-color: var(--primary) !important;
+  border-top: 2px solid var(--standard-border) !important;
+}
+
+/* Block out Ads */
+body.dark-theme .adsbygoogle {
+  position: relative;
+}
+
+body.dark-theme .adsbygoogle:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  background-color: #222;
+}
+/**********************
+** COMPLETION SCREEN **
+**********************/
+
+body.dark-theme h2:not(._1x6Dk) {
+  color: var(--title-text) !important;
+}
+
+/* Bar in the middle */
+body.dark-theme .SQR8J {
+  border-left: 2px solid var(--standard-border);
+}
+
+body.dark-theme div[data-test="answer-correct"] {
+  color: #bbb !important;
+}
+
+/****************
+** TIPS SCREEN **
+****************/
+
+/* Tips Title */
+body.dark-theme ._3c96B {
+  color: var(--title-text) !important;
+}
