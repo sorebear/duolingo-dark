@@ -1,31 +1,33 @@
-window.addEventListener('keypress', (e) => {
-  if (e.key = "d" && e.altKey) {
-    var body = document.querySelector('body');
-    if (body.classList.contains('dark-theme')) {
-      body.classList.remove('dark-theme');
-      checkScreen();
-    } else {
-      body.classList.add('dark-theme');
-      checkScreen();
-    }
-  }
-});
-
 let currentPage = null;
 
-setInterval(() => {
-  if (window.location.href !== currentPage) {
-    currentPage = window.location.href;
+window.addEventListener('load', () => {
+  document.querySelector('body').classList.add('dark-theme');
+
+
+  setInterval(() => {
+    if (window.location.href !== currentPage) {
+      currentPage = window.location.href;
+      checkScreen();
+    }
+  }, 500);
+});
+
+window.addEventListener('keypress', (e) => {
+  if (e.code === "KeyD" && e.altKey) {
+    document.querySelector('body').classList.add('dark-theme');
+    checkScreen();
+  } else if (e.code === "KeyL" && e.altKey) {
+    document.querySelector('body').classList.remove('dark-theme');
     checkScreen();
   }
-}, 500);
+});
 
 function checkScreen() {
   if (currentPage === 'https://www.duolingo.com/learn') {
     learnScreen();
   } else if (currentPage.includes('www.duolingo.com/skill/')) {
     skillsTipScreen();
-  }
+  } 
 }
 
 function skillsTipScreen() {
@@ -34,7 +36,7 @@ function skillsTipScreen() {
     attempts += 1;
 
     // Check if it's a Skills Explanation Page
-    const skillExplanationSpans = document.querySelectorAll('.ff9NT span');
+    const skillExplanationSpans = document.querySelectorAll('.ff9NT span, .lqXrN span');
 
     if (skillExplanationSpans.length) {
       clearInterval(checkInterval);
@@ -75,8 +77,10 @@ function learnScreen() {
         });
       
         crowns.forEach((img) => {
-          img.setAttribute('original-url', img.src);
-          img.src = darkCrownUrl;
+          if (img.src !== darkCrownUrl) {
+            img.setAttribute('original-url', img.src);
+            img.src = darkCrownUrl;
+          }
         });
       } else {
         crowns.forEach((img) => {

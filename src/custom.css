@@ -11,14 +11,15 @@
   --black: #000;
   --gold: #ffc800;
   --dark-gold: #d88500;
-
   --white: #fff;
   --almost-white: #eee;
   --off-white: #ddd;
+  --gray: #aaa;
 
   --standard-border: var(--dark-accent);
   --title-text: var(--almost-white);
   --body-text: var(--almost-white);
+  --support-text: var(--gray);
 
   /* Text Bubble */
   --text-bubble-bg: var(--lighter-accent);
@@ -63,8 +64,9 @@ body.dark-theme .kooao {
 }
 
 /* Skill Tree Wrapper */
+body.dark-theme ._2PVaI,
 body.dark-theme #root > div:first-child > div:nth-child(2) > div:first-child > div:nth-child(2) > div:first-child {
-  background-color: #333;
+  background-color: var(--primary);
 }
 
 /* Skill Tree Flag */
@@ -88,6 +90,30 @@ body.dark-theme img[alt="crown"]:last-child {
 body.dark-theme #root > div:first-child > div:nth-child(2) > div:first-child > div:nth-child(1) > div:first-child > div:first-child {
   background-color: #444;
   border: 2px solid var(--side-item-border);
+}
+
+/* Leaderboard Rankings Text */
+body.dark-theme .yXp5g {
+  color: var(--body-text);
+}
+
+/* Hovered Leaderboard Rankings Text */
+body.dark-theme .yXp5g:hover {
+  background-color: var(--light-accent);
+}
+
+body.dark-theme ._3QwaZ {
+  background: var(--lighter-accent);
+}
+
+/* Leaderboard XP points text */
+body.dark-theme ._3cvJx {
+  color: var(--support-text);
+}
+
+/* Leaderboard Scroll Container */
+body.dark-theme ._2ufrs::-webkit-scrollbar {
+  display: none;
 }
 
 /* Side Bar Panel Wrappers */
@@ -120,6 +146,11 @@ body.dark-theme .YBCQI {
 /* Friends List */
 body.dark-theme ul._3lKd4 {
   border-bottom: 2px solid var(--primary) !important;
+}
+
+/* Friends Scrollbar */
+body.dark-theme ._3VQM7::-webkit-scrollbar-thumb {
+  background: var(--light-accent);
 }
 
 /* Leaderboard Title */
@@ -191,6 +222,7 @@ body.dark-theme ._2cmOB {
 }
 
 /* Challenge Header */
+body.dark-theme h1,
 body.dark-theme h1[data-test="challenge-header"] {
   color: var(--title-text) !important;
 }
@@ -228,7 +260,7 @@ body.dark-theme ._1JPPG._2nhmY {
 
 /* Line on Listening Exercise */
 body.dark-theme ._3ANq3 > span:not(:last-child) {
-  border-right: 2px solid #1a1a1a !important;
+  border-right: 2px solid #4a4a4a !important;
 }
 
 /* Buttons */
@@ -281,7 +313,7 @@ body.dark-theme .SQR8J {
 }
 
 body.dark-theme div[data-test="answer-correct"] {
-  color: #bbb !important;
+  color: var(--gray) !important;
 }
 
 /****************
@@ -291,4 +323,30 @@ body.dark-theme div[data-test="answer-correct"] {
 /* Tips Title */
 body.dark-theme ._3c96B {
   color: var(--title-text) !important;
+}
+
+/*******************
+** STORIES SCREEN **
+*******************/
+
+/* Background Color */
+body.dark-theme ._1lgsd,
+body.dark-theme ._1zsgz,
+body.dark-theme ._2nLk_ {
+  background-color: var(--primary);
+}
+
+/* Intro Text */
+body.dark-theme ._1lJ31 {
+  color: var(--body-text);
+}
+
+/* Set Text */
+body.dark-theme ._1qdLM {
+  color: var(--title-text);
+}
+
+/* Story Title */
+body.dark-theme ._1eZU8 {
+  color: var(--body-text);
 }
