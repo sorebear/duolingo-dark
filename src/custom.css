@@ -40,7 +40,8 @@
   --locked-section-border: var(--standard-border);
 }
 
-body.dark-theme { 
+body.dark-theme {
+  color: var(--almost-white);
   background-color: var(--primary) !important;
 }
 
@@ -261,6 +262,23 @@ body.dark-theme ._1JPPG._2nhmY {
 /* Line on Listening Exercise */
 body.dark-theme ._3ANq3 > span:not(:last-child) {
   border-right: 2px solid #4a4a4a !important;
+}
+
+/* Sentence Prompts */
+body.dark-theme ._26wPn:after {
+  background-color: var(--lighter-accent);
+  border-color: var(--gray);
+}
+
+/* Sentence Prompts Text */
+body.dark-theme div[data-test="challenge-judge-text"] {
+  color: var(--body-text);
+}
+
+/* Sentence Prompts Hover */
+body.dark-theme .fJSw6:hover:not(._326cY):not(.IACXk):not(._8Z5X):after,
+body.dark-theme .fJSw6:active:not(._326cY):not(.IACXk):not(._8Z5X):after {
+  background-color: var(--light-accent);
 }
 
 /* Buttons */

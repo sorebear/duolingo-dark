@@ -13,10 +13,10 @@ window.addEventListener('load', () => {
 });
 
 window.addEventListener('keypress', (e) => {
-  if (e.code === "KeyD" && e.altKey) {
+  if (e.code === "KeyD" && (e.altKey || e.ctrlKey)) {
     document.querySelector('body').classList.add('dark-theme');
     checkScreen();
-  } else if (e.code === "KeyL" && e.altKey) {
+  } else if (e.code === "KeyL" && (e.altKey || e.ctrlKey)) {
     document.querySelector('body').classList.remove('dark-theme');
     checkScreen();
   }
